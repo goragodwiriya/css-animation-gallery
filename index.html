@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Gallery — คลังแอนิเมชัน CSS สำเร็จรูป</title>
+  <meta name="description" content="รวมแอนิเมชัน CSS สวย ๆ กว่า 59 แบบ พร้อมตัวอย่างสด ชื่อเรียก และโค้ดที่คัดลอกไปใช้ได้ทันที ด้วย HTML CSS JavaScript ล้วน ๆ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- พื้นหลังลูกบอลแสงสี -->
+  <div class="orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- แถบนำทางแบบกระจก -->
+  <nav class="nav">
+    <div class="logo"><span class="logo-ico">⚡</span> AnimGallery</div>
+    <div class="nav-search">
+      <span class="ico">🔎</span>
+      <input type="text" id="navSearch" placeholder="ค้นหาแอนิเมชัน..." autocomplete="off">
+    </div>
+    <button class="icon-btn" id="themeToggle" title="สลับโหมดสว่าง / มืด">☀️</button>
+  </nav>
+
+  <!-- ส่วนหัวเว็บ -->
+  <header class="hero">
+    <div class="badge">✨ คลังแอนิเมชัน <b>CSS</b> พร้อมโค้ดคัดลอกได้ทันที</div>
+    <h1>CSS Animation<br>Gallery</h1>
+    <p>รวมแอนิเมชันสวย ๆ หลากหลายรูปแบบ — ตัวโหลด ข้อความ ปุ่ม องค์ประกอบ 3 มิติ และพื้นหลัง
+      ดูตัวอย่างสด ๆ กดคัดลอกโค้ด แปะไปใช้งานได้เลย ไม่ต้องติดตั้งไลบรารีเพิ่ม</p>
+    <div class="hero-search">
+      <span class="ico">🔍</span>
+      <input type="text" id="heroSearch" placeholder="ค้นหาแอนิเมชัน... เช่น spinner, ข้อความ, ปุ่ม, พื้นหลัง" autocomplete="off">
+      <kbd>/</kbd>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="statCount">0</b><span>แอนิเมชัน</span></div>
+      <div class="stat"><b>6</b><span>หมวดหมู่</span></div>
+      <div class="stat"><b>100%</b><span>Vanilla CSS</span></div>
+      <div class="stat"><b>0</b><span>ไลบรารีเพิ่ม</span></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ชิปกรองหมวดหมู่ -->
+    <div class="chips" id="chips"></div>
+
+    <!-- ตารางการ์ดแอนิเมชัน -->
+    <section class="grid" id="grid"></section>
+  </main>
+
+  <footer>
+    สร้างด้วย HTML + CSS + JavaScript ล้วน ๆ — คัดลอกโค้ดไปใช้งานได้อิสระ <span class="heart">♥</span>
+  </footer>
+
+  <div class="toast" id="toast">คัดลอกโค้ดแล้ว ✨</div>
+
+  <style id="animStyles"></style>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
